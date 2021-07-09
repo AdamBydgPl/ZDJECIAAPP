@@ -1,0 +1,9 @@
+.Panel
+{
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #4b579b;
+    padding: 10px;
+
+}
