@@ -5,9 +5,12 @@ import Karta from '../Karta';
 import api from '../../api/api';
 
 const listaLi = (data, k) => 
+
 data.map((item) => 
 <li key={item.no}> <Karta item={item}> </Karta></li>
 )
+
+
 //const url = 'http://api.nbp.pl/api/exchangerates/rates/a/gbp/2021-06-01/2021-06-30/'
 
 function Nawigacja()
@@ -29,6 +32,7 @@ function Nawigacja()
     {!data
     ? <div>Loading ...</div>
     : listaLi(data)}
+
 
 
     
