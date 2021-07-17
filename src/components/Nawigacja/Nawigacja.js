@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import './Nawigacja.css'
 import Karta from '../Karta';
-import api from '../../api/api';
+import apiCollectionAll from '../../api/apiCollectionAll';
 
 const listaLi = (data, k) => 
 
@@ -22,8 +22,7 @@ function Nawigacja()
     {
      /*fetch(url)
     .then(response=>response.json())*/
-    api('//collections')
-    .then(responseData=>setData(responseData));
+    apiCollectionAll(responseData=>setData(responseData), {});
     
 },[])
 

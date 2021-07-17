@@ -13,16 +13,13 @@ function App() {
       <Naglowek />
         <section className="Srodek">
           <Nawigacja />
-          <Switch>
-    <Route path="/zdjecia">
-            {alert("x")}
-          </Route>
-    </Switch>
+          
           <Panel />
-        </section>      
+    
+        </section>
       <Stopka />
     </div>
-    
+
     </Router>
   );
 }
