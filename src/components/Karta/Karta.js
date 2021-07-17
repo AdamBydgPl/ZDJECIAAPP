@@ -12,9 +12,10 @@ function Karta({item})
     return <div class="container">
 
 <span class="border tl">Udostępnione: {item.published_at.substring(0,10)}</span>    
-    <h1><Link to={"/zdjecia/" + item.id} class="card-link">{item.title}</Link></h1>    
+    <h1><Link to={"/zdjecia/" + item.id} class="card-link">{item.title}</Link></h1>
+    <img src={item.preview_photos[0].urls.small}  />   
     {/*<span class="border bl">border-bottom-left</span>
-    <span class="border br">border-bottom-right</span>
+    <span class="border br"h>border-bottom-right</span>
   
 */}
   
