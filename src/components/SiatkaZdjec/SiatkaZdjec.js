@@ -19,7 +19,8 @@ function SiatkaZdjec()  {
     {
         apiCollectionPhotos(responseData=>setData(responseData),{id})
     },
-    id)
+    
+    {id})
     return <div className="grid-container">
         {!data?<div>Ładowanie danych...</div>:
         ListZdjec(data)}

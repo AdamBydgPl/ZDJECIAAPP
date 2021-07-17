@@ -11,7 +11,7 @@ function Zdjecie()
     {
         apiPhoto(responseData => setData(responseData),{id});
        
-    },[])
+    },[]    )
     return  <div>{!data?<div>Ładowanie danych...</div>:
             img(data)}  </div>
 }
