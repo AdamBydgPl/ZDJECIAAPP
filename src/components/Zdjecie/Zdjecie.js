@@ -16,7 +16,7 @@ function Zdjecie()
             img(data)}  </div>
 }
 
-function img({alt_description, urls, likes,downloads, location})
+function img({alt_description, urls, likes, downloads, location})
 {
 return <div><StylH1><h1>{alt_description}</h1></StylH1>
 <img src={urls.full} />
@@ -25,7 +25,7 @@ return <div><StylH1><h1>{alt_description}</h1></StylH1>
 
 </div>
     
-
+ 
 }
 
 const StylH1 = styl.h1
